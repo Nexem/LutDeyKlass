@@ -12,7 +12,7 @@
 
 	if(isset($_POST['loginUser']))
 	{	
-		$conn = mysqli_connect('localhost','root','','getahome');
+		$conn = mysqli_connect('https://2892961.admin.sd5.gpaas.net/','root','','boribote');
 		$idUser = $_POST['loginUser'];
 		$pwdUser = $_POST['pwd'];
 		$pwd = md5($pwdUser,TRUE);
@@ -22,7 +22,7 @@
 			die("Please enter your id's first before the submit!");	
 		}
 		
-		$sqlUser = "SELECT * FROM user WHERE login = '".$idUser."' AND pwd = '".$pwd."'";
+		$sqlUser = "SELECT * FROM user WHERE login = '".$idUser."' AND password = '".$pwd."'";
 		
 		$loginUser = $conn->query($sqlUser);
 		if(mysqli_num_rows($loginUser) == 1)
@@ -31,7 +31,7 @@
 			$_SESSION['roleUser'] = $row['role']; 
 			$_SESSION['idUser'] = $row['id'];	
 			$_SESSION['idHousing'] = $row['idHousing'];			
-			header("Location:GetAHome.php");
+			header("Location:homepage.php");
 		}
 		else {
 			echo "Sorry, wrong login IDs, try again";
