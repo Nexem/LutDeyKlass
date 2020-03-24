@@ -1,0 +1,113 @@
+﻿#header {
+	background-position:center;
+	height: 100px;
+	width: 900px;
+	background-image:url('image/interieur.jpg');
+}
+#menu{
+	background-position:center;
+	width:100px;
+	height:45px;
+}
+
+#wrapper{
+	width:900px;
+	margin:0 auto;
+}
+
+#panelContact{
+	width:450px;
+	float:left;
+	height:450px;
+	background-color:black;
+	border-radius:25px;
+}
+
+
+
+
+
+
+
+
+#vignette{
+	background-color: gray;
+		float: left;
+	margin-right:7px;
+}
+#descrip{
+	background-color: gray;
+	width:600px;
+	float: left;
+	
+	margin-left:20px;
+}
+
+input[type=submit] {
+	outline: none !important;
+	border: none;
+	background: grey;
+	border-radius: 10px;
+	padding: 0 20px;
+	width: 100%;
+	height: 50px;
+	font-family: Poppins-Medium;
+	font-size: 15px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: uppercase;
+
+
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+	background:silver;
+}
+
+
+
+
+
+
+
+
+iframe {
+	border: none !important;
+}
+
+
+
+
+#headertext{
+	float:left;
+}
+
+#ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f7fcf7;
+}
+
+#li {
+    float: left;
+}
+
+#li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#li a:hover {
+	cursor: auto;
+    background-color:green;
+}
+
+.active{
+	background-color: green
+}
