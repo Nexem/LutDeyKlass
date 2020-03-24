@@ -1,5 +1,6 @@
 <?php
 ini_set('display_errors', 1);
+echo "coucou";
 require_once('Twitter/TwitterAPIExchange.php');
 
 $settings = array(
